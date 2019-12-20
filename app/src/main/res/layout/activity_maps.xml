@@ -14,34 +14,13 @@
         android:layout_weight="4"
         tools:context=".MapsActivity" />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal"
-        android:background="#949494"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="wrap_content"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bot"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo"
-            >
+            android:background="#C4C4C4"
+            android:layout_gravity="bottom"
+            app:menu="@menu/menu_nav"
+            />
 
-        </ImageView>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo"
-            android:background="#fff">
-
-        </ImageView>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo">
-
-        </ImageView>
-    </LinearLayout>
 </LinearLayout>

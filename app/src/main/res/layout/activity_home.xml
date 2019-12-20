@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
+    android:background="#fff"
     android:orientation="vertical">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
         android:paddingBottom="60dp"
-        android:background="#9C9B9B"
+        android:background="#C4C4C4"
         android:text="Cari Makan"
         android:gravity="center"
         android:textSize="40dp">
@@ -23,38 +24,28 @@
         android:layout_height="wrap_content"
         android:src="@drawable/pencarian"
         android:autofillHints="Pencarian"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp">
 
     </ImageView>
 
-    <LinearLayout
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal"
-        android:background="#949494">
+        android:background="#C4C4C4"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_nav"
+        />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo"
-            android:background="#fff">
+</FrameLayout>
 
-        </ImageView>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo">
 
-        </ImageView>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo">
 
-        </ImageView>
-    </LinearLayout>
 </LinearLayout>
+
